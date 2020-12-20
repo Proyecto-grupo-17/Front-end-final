@@ -15,7 +15,8 @@
 
       <QuienesSomos />
       <servicios></servicios>
-      
+      <CasosExito></CasosExito>
+      <Desarrolladores></Desarrolladores>   
   </div>
   
 </template>
@@ -25,13 +26,18 @@
 import HelloWorld from '@/components/HelloWorld.vue'
 import QuienesSomos from '@/components/QuienesSomos.vue'
 import Servicios from '../components/Servicios.vue'
+import CasosExito from '../components/CasosExito.vue'
+import Desarrolladores from '../components/Desarrolladores.vue'
 
 export default {
   name: 'Home',
   components: {
+    CasosExito,
     HelloWorld,
     QuienesSomos,
     Servicios,
+    Desarrolladores,
+    
   },
   data: () => ({
     items: [

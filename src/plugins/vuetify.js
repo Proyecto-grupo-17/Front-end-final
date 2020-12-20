@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Vuetify from 'vuetify/lib/framework';
 import es from 'vuetify/lib/locale/es';
 
+
 Vue.use(Vuetify);
 
 export default new Vuetify({
@@ -18,7 +19,10 @@ export default new Vuetify({
         info: '#2196F3',
         success: '#4CAF50',
         warning: '#FFC107',
-        text : '#230f38'
+        text : '#230f38',
+        fondo: '#F2F2F2',
+        color1: '#3A1A59',
+        color2: '#F1E9F9'
       },
     },
   },
