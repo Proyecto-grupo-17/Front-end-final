@@ -66,13 +66,45 @@
 </template>
 
 <script>
+import home from "./views/Home.vue";
 export default {
+  components: { home },
+  name: 'App',
+
+    data () {
+      return {
+      drawer: false,
+      estado:1
+      }
+    },
+
+  computed:{
+    logueado(){
+      return this.$store.state.usuario;
+    },
+  },
+  created(){
+    this.$store.dispatch("");
+  },
   methods:{
     async GoLogin() {
       this.$router.push('../login');
     },
     async GoHome() {
       this.$router.push('/');
+    },
+    salir(){
+      this.$store.dispatch("salir");
+      this.estado=1
+    },
+
+    ingresar(){
+      this.estado=0
+    },
+
+    home(){
+      this.estado=1
+
     }
   }
 }
