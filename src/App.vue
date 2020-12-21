@@ -21,7 +21,7 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn
+      <v-btn v-if="estado==1"
         @click.prevent="GoLogin"
         target="_blank"
         text
@@ -29,6 +29,7 @@
         <span class="mr-2 text--text">Iniciar sesión</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
+      <h2 v-else>Bienvenido</h2>
       <template v-slot:extension>
           <v-tabs align-with-title>
            | <v-tab class="text--text" href="#quien">QUIÉNES SOMOS</v-tab> 

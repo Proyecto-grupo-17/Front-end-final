@@ -11,7 +11,10 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home
+    component: Home,
+    meta: {
+      public: true
+    }
   },
   {
     path: '/about',
